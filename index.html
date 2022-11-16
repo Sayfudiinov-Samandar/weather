@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Weather your country</title>
     <link rel="stylesheet" href="./css/main.css">
+    <style>
 
+
+    </style>
 </head>
 <body>
+    <div class="bg-img">
+
+    </div>
     <header class="site-header">
         <div class="container">
 
@@ -18,15 +24,47 @@
     <main class="site-main">
         <section class="hero">
             <div class="container">
+                <div class="hero-box">
+                    <div class="hero-box__result result">
 
+                    </div>
+                    <form  class="hero-box__form">
+                        <input class="hero-box__input" type="text" name="search_country_weather" placeholder="Enter your city:">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-
         </div>
     </footer>
+
+
+    <template class="weather-temp">
+        <div class="result__res-box">
+            <h3 class="result__loc-name">
+                
+            </h3>
+
+            <strong class="result__now-time">
+                2:49
+            </strong>
+            <div class="result__temp-box">
+                
+            </div>
+            <p class="result__temp">
+
+            </p>
+
+            <p class="result__temp-dis">
+
+            </p>
+
+
+        </div>
+    </template>
+    <script src="./js/main.js"></script>
 </body>
 </html>
