@@ -138,15 +138,15 @@ function makeList(array) {
 
 for (let index = 0; index <= 5; index++) {
     if (index==1) {
-        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/2.5/weather?q=angren&units=metric&appid=${MYAPIWEATHERKEY}`)
     }else if (index==2) {
-        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/2.5/weather?q=andijon&units=metric&appid=${MYAPIWEATHERKEY}`)
     }
     
     else if(index==3){
-        getWeatherDefaoultlast(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultlast(`https://api.openweathermap.org/data/2.5/weather?q=termiz&units=metric&appid=${MYAPIWEATHERKEY}`)
     }else if(index==4){
-        getWeatherDefaoultlast(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultlast(`https://api.openweathermap.org/data/2.5/weather?q=saman&units=metric&appid=${MYAPIWEATHERKEY}`)
     }
 
 }
