@@ -138,15 +138,15 @@ function makeList(array) {
 
 for (let index = 0; index <= 5; index++) {
     if (index==1) {
-        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
     }else if (index==2) {
-        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultFirst(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
     }
     
     else if(index==3){
-        getWeatherDefaoultlast(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultlast(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
     }else if(index==4){
-        getWeatherDefaoultlast(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=${MYAPIWEATHERKEY}`)
+        getWeatherDefaoultlast(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&appid=${MYAPIWEATHERKEY}`)
     }
 
 }
