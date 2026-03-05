@@ -191,4 +191,6 @@ function tes() {
     }
 }
 
-elForm.addEventListener("keyup", deb(tes, 2000))
+elForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+});
