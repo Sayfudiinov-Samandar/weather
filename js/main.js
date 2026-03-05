@@ -11,7 +11,6 @@ const elFormInput = document.querySelector(".hero-box__input");
 let twoCountryfirst = [];
 let twoCountrylast = [];
 
-/* ================= FETCH WEATHER ================= */
 
 async function getWeather(url) {
     try {
@@ -66,7 +65,6 @@ async function getWeatherLast(url) {
     }
 }
 
-/* ================= CREATE WEATHER CARD ================= */
 
 function createWeatherCard(elm) {
 
@@ -86,7 +84,7 @@ function createWeatherCard(elm) {
     return clone;
 }
 
-/* ================= RENDER FUNCTIONS ================= */
+
 
 function makeList(array) {
 
@@ -124,7 +122,6 @@ function makeListothersLast(array) {
     elResultLast.appendChild(fragment);
 }
 
-/* ================= WEATHER ICON ================= */
 
 function changeImg(id, box) {
 
@@ -151,7 +148,7 @@ function changeImg(id, box) {
     }
 }
 
-/* ================= GEOLOCATION ================= */
+
 
 navigator.geolocation.getCurrentPosition((position) => {
 
@@ -162,7 +159,7 @@ navigator.geolocation.getCurrentPosition((position) => {
 
 });
 
-/* ================= DEFAULT CITIES ================= */
+
 
 getWeatherFirst(`https://api.openweathermap.org/data/2.5/weather?q=angren&units=metric&appid=${MYAPIWEATHERKEY}`);
 
@@ -172,7 +169,7 @@ getWeatherLast(`https://api.openweathermap.org/data/2.5/weather?q=termiz&units=m
 
 getWeatherLast(`https://api.openweathermap.org/data/2.5/weather?q=saman&units=metric&appid=${MYAPIWEATHERKEY}`);
 
-/* ================= DEBOUNCE ================= */
+
 
 function debounce(cb, delay) {
 
@@ -188,7 +185,6 @@ function debounce(cb, delay) {
     };
 }
 
-/* ================= SEARCH ================= */
 
 function searchCity() {
 
@@ -206,7 +202,7 @@ function searchCity() {
     }
 }
 
-/* ================= EVENTS ================= */
+
 
 elForm.addEventListener("submit", function (e) {
     e.preventDefault();
